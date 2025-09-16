@@ -1,9 +1,9 @@
 // src/App.jsx
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Login from "./pages/login";
-import Inventario from "./pages/inventario";
-import AdminPage from "./pages/adminPage";
+import Login from "./pages/login/login";
+import Inventario from "./pages/inventario/inventario";
+import AdminPage from "./pages/admin/adminPage";
 
 // Páginas de ejemplo para cada rol
 
