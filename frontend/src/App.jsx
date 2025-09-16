@@ -1,10 +1,12 @@
 // src/App.jsx
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Login from "./login";
+import Login from "./pages/login";
+import Inventario from "./pages/inventario";
+import AdminPage from "./pages/adminPage";
 
 // Páginas de ejemplo para cada rol
-const AdminPage = () => <h1>Página Admin</h1>;
+
 const MeseroPage = () => <h1>Página Mesero</h1>;
 const CajeroPage = () => <h1>Página Cajero</h1>;
 
@@ -19,6 +21,9 @@ function App() {
         <Route path="/admin" element={<AdminPage />} />
         <Route path="/mesero" element={<MeseroPage />} />
         <Route path="/cajero" element={<CajeroPage />} />
+
+        {/* Inventario */}
+        <Route path="/inventario" element={<Inventario />} />
       </Routes>
     </Router>
   );
